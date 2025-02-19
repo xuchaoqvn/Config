@@ -2,6 +2,7 @@
 {
     public enum UIType
     {
+        AnchoredPosition,
         Text,
         Toggle,
         Slider,
