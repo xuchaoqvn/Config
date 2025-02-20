@@ -36,6 +36,15 @@
         /// 写入配置
         /// </summary>
         void Save();
+
+        /// <summary>
+        /// 获取配置
+        /// </summary>
+        /// <param name="unitName">配置单元名称</param>
+        /// <param name="itemName">配置项名称</param>
+        /// <typeparam name="T">配置数据类型</typeparam>
+        /// <returns>>配置</returns>
+        bool GetConfig<T>(string unitName, string itemName, out T t);
         #endregion
     }
 }
